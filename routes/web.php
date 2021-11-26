@@ -21,3 +21,10 @@ $router->get('/product', 'ProductController@index');
 $router->post('/product', 'ProductController@create');
 $router->post('/request-product', 'ProductController@requestProduct');
 $router->get('/my-product/{userid}', 'ProductController@getUserProducts');
+
+$router->get('/image-validate', 'ProductController@imageValidate');
+$router->get('/product-validate', 'ProductController@productValidate');
+$router->post('/testcurl', 'ProductController@testCurl');
+
+$router->post('/placebid', 'BidController@placeBid');
+$router->get('/mybid/{userid}', 'BidController@userBidData');
